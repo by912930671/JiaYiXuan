@@ -1,0 +1,28 @@
+server:
+  port: 9000
+
+security:
+  oauth2:
+    client:
+      clientId: ApplicationsClient
+      clientSecret: c599c2e0-4999-4031-bd7b-9a6568cd483c
+      accessTokenUri: http://127.0.0.1:8080/auth/realms/CloudRealm/protocol/openid-connect/token
+      userAuthorizationUri: http://127.0.0.1:8080/auth/realms/CloudRealm/protocol/openid-connect/auth
+      #tokenName: oauth_token
+      #authenticationScheme: query
+      #clientAuthenticationScheme: form
+    resource:
+      userInfoUri: http://127.0.0.1:8080/auth/realms/CloudRealm/protocol/openid-connect/userinfo
+
+#security:
+#  oauth2:
+#    client:
+#      clientId: 233668646673605
+#      clientSecret: 33b17e044ee6a4fa383f46ec6e28ea1d
+#      accessTokenUri: https://graph.facebook.com/oauth/access_token
+#      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+#      tokenName: oauth_token
+#      authenticationScheme: query
+#      clientAuthenticationScheme: form
+#    resource:
+#      userInfoUri: https://graph.facebook.com/me
